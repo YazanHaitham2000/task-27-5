@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2d2f3e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #20222d;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+.menu li a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #fff;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.stat-box {
+    background-color: #3b3e52;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.top-selling, .total-sale {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.total-sale {
+    max-width: 200px;
+    text-align: center;
+}
+
+.top-selling table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.top-selling th, .top-selling td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.progress-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#ff3e00 70%, #eaeaea 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    position: relative;
+}
+
+.progress-circle p{
+    position: absolute;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo"><span style="color: red;">M</span>-SoftTech</div>
+        <ul class="menu">
+            <li>Dashboard</li>
+            <li>Customers</li>
+            <li>Projects</li>
+            <li>Orders</li>
+            <li>Inventory</li>
+            <li>Accounts</li>
+            <li>Tasks</li>
+        </ul>
+    </div>
+    <div class="main-content" style="background-color: #000035;">
+        <div class="header" style="background-color: #000035;color: white;">
+            <h1>Dashboard</h1>
+            <div class="user-info">
+                <span>Manoj Adhikari</span>
+                <span>UI / UX Designer</span>
+            </div>
+        </div>
+        <div class="stats" style="background-color: #000035;color: white;">
+            <div class="stat-box">
+                <p>67</p>
+                <p>Customers</p>
+            </div>
+            <div class="stat-box">
+                <p>88</p>
+                <p>Projects</p>
+            </div>
+            <div class="stat-box">
+                <p>99</p>
+                <p>Orders</p>
+            </div>
+            <div class="stat-box">
+                <p>78</p>
+                <p>Tasks</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="top-selling" style="background-color: #3b3e52;color: white;">
+                <h2>Top Selling Projects</h2>
+                <table>
+                    <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                    </tr>
+                    <tr>
+                        <td>Ernst Handel</td>
+                        <td>Roland Mendel</td>
+                        <td>Austria</td>
+                    </tr>
+                    <tr>
+                        <td>Island Trading</td>
+                        <td>Helen Bennett</td>
+                        <td>UK</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="total-sale" style="background-color: #3b3e52;color: white;">
+                <h2 style="color: red;">Total Sale</h2>
+                <div class="progress-circle">
+                    <p>70%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+    
+
